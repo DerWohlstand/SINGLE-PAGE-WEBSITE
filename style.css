@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root {
+    --red:#F94A29;
+  }
+body{
+    background-color: #F9F5F6;
+}
+.logo{
+    color: var(--red) ;
+}
+.container
+{
+    padding:10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.lbl_logo{
+font-size: 2rem;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+.home
+{
+    color: var(--red);
+}
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: var(--red) ;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after
+{
+    width: 100%;
+}
+.hid
+{
+    display: none;
+}
+/* slider */
+    * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: var(--red);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+img{
+    width: 100%;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* services */
+#services
+{
+    padding:30px 0;
+}
+.services-list,.feature-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+    padding: 4%;
+}
+.about
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+    padding: 22px 10%; 
+}
+.inner{
+text-align: center;
+}
+/* span.circle
+{
+    padding: 22px 4%;
+    border-radius: 50%;
+    background: var(--red);
+} */
+.container-list
+{
+    text-align: center;
+}
+.inner h4{
+    padding-top: 40%;
+    font-weight: 100;
+
+}
+.ser{
+    padding: 30px;
+    border-radius: 50%;
+    background: var(--red);
+    font-size: 2.3rem;
+    color: white;
+}
+.ft{
+    padding: 6px;
+    border-radius: 50%;
+    background: black;
+    font-size: 10px;
+    color: white;
+}
+.para
+{
+    padding-top: 1rem;
+    font-size: 20px;
+}
+.fp
+{
+    font-size: 15px;
+
+}
+.feature 
+{
+    padding-top: 1rem;
+}
+.feature-box
+{
+    display: flex;
+}
+.div2
+{
+    padding-left: 1rem;
+}
+.inner-para
+{
+    padding-top: 5px;
+    font-size: 15px;
+}
+.img
+{
+    width: 100%;
+}
+#support
+{
+    background-color: var(--red);
+    margin-top: 4rem;
+    text-align: center;
+}
+.inner-div
+{
+    padding: 10%;
+    color: white;
+}
+.para1{
+    font-size: 2rem;
+}
+.para2
+{
+    padding-top: 2rem;
+}
+button
+{
+    margin-top: 2rem;
+    font-size: 25px;
+    background: white;
+    border: none;
+    border-radius: 28px;
+    padding: 12px;
+}
+button span{
+    cursor:pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+button span:after{
+content: '\00bb';
+color: var(--red);
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+
+}
+button:hover span{
+    padding-right: 25px;
+}
+button:hover span:after{
+opacity: 1;
+right: 0;
+}
+/* review */
+#review
+{
+margin-top: 5rem;
+}
+.abt{
+width: 50%;
+border-radius: 1rem;
+
+}
+.about div{
+    width: 80%;
+}
+.sub-titles
+{
+    margin-top: 2rem;
+    font-size: 22px;
+}
+.desc
+{
+    font-size: 12px;
+}
+#footer
+{
+    background-color: #454545;
+    color: white;
+}
+
+h3{
+    font-weight:100;
+}
+.first p,.second p,.third p{
+    font-size: 13px;
+    margin: 1rem 0;
+}
+
+.second p,.third p{
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    border-color: white;
+
+}
+
+.containers-list
+{
+    padding: 0 4rem;
+}
+.foot
+{
+    background-color: black;
+}
+footer
+{
+    padding: 1rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 13px;
+
+}
+footer ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+/* css for small screen */
+@media only screen and (max-width:1250px)
+{
+    .img
+    {
+        height: 100%;
+        width: 100%;
+    }
+}
+@media only screen and (max-width:700px)
+{
+  
+    .hid
+    {
+        display: block;
+        font-size: 25px;
+    }
+    nav ul
+    {
+        background-color:var(--red);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+   nav ul .hid
+   {
+position: absolute;
+top: 25px;
+left: 25px;
+cursor: pointer;
+   }
+    nav ul li
+    {
+        display: block;
+        margin: 25px;
+    }
+    nav ul li a{
+        color: white;
+
+    }
+    .home{
+        color: white;
+    }
+}
